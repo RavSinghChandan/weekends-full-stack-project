@@ -1,0 +1,53 @@
+<mat-toolbar color="primary" class="app-header">
+  <button mat-icon-button (click)="onToggleSidebar()" class="sidebar-toggle">
+    <mat-icon>menu</mat-icon>
+  </button>
+  
+  <span class="app-title">Healthcare Management System</span>
+  
+  <span class="spacer"></span>
+  
+  <button mat-icon-button [matMenuTriggerFor]="notificationMenu" class="notification-btn">
+    <mat-icon [matBadge]="3" matBadgeColor="warn">notifications</mat-icon>
+  </button>
+  
+  <mat-menu #notificationMenu="matMenu" class="notification-menu">
+    <div mat-menu-item>
+      <mat-icon>event</mat-icon>
+      <span>Appointment reminder in 30 minutes</span>
+    </div>
+    <div mat-menu-item>
+      <mat-icon>medical_services</mat-icon>
+      <span>New EMR update available</span>
+    </div>
+    <div mat-menu-item>
+      <mat-icon>schedule</mat-icon>
+      <span>Schedule change notification</span>
+    </div>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>visibility</mat-icon>
+      <span>View all notifications</span>
+    </button>
+  </mat-menu>
+  
+  <button mat-icon-button [matMenuTriggerFor]="userMenu" class="user-menu-btn">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  
+  <mat-menu #userMenu="matMenu" class="user-menu">
+    <div mat-menu-item>
+      <mat-icon>person</mat-icon>
+      <span>Profile</span>
+    </div>
+    <div mat-menu-item>
+      <mat-icon>settings</mat-icon>
+      <span>Settings</span>
+    </div>
+    <mat-divider></mat-divider>
+    <button mat-menu-item>
+      <mat-icon>exit_to_app</mat-icon>
+      <span>Logout</span>
+    </button>
+  </mat-menu>
+</mat-toolbar> 

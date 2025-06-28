@@ -1,0 +1,250 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Custom Material Design Overrides */
+.mat-mdc-card {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  transition: box-shadow 0.3s ease !important;
+}
+
+.mat-mdc-card:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+.mat-mdc-button {
+  border-radius: 8px !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.mat-mdc-raised-button {
+  border-radius: 8px !important;
+  text-transform: uppercase !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.5px !important;
+}
+
+.mat-mdc-form-field {
+  width: 100% !important;
+}
+
+.mat-mdc-dialog-container {
+  border-radius: 12px !important;
+}
+
+/* Custom Utility Classes */
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+/* Error Message */
+.error-message {
+  color: #f44336;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Success Message */
+.success-message {
+  color: #4caf50;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Warning Message */
+.warning-message {
+  color: #ff9800;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Info Message */
+.info-message {
+  color: #2196f3;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mat-mdc-card {
+    margin: 8px !important;
+  }
+  
+  .p-24 {
+    padding: 16px !important;
+  }
+  
+  .mb-24 {
+    margin-bottom: 16px !important;
+  }
+}
+
+/* Animation Classes */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Custom Theme Colors */
+.primary-color {
+  color: #3f51b5;
+}
+
+.accent-color {
+  color: #ff4081;
+}
+
+.success-color {
+  color: #4caf50;
+}
+
+.warning-color {
+  color: #ff9800;
+}
+
+.error-color {
+  color: #f44336;
+}
+
+/* Card Hover Effects */
+.hover-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Button Styles */
+.btn-primary {
+  background-color: #3f51b5 !important;
+  color: white !important;
+}
+
+.btn-accent {
+  background-color: #ff4081 !important;
+  color: white !important;
+}
+
+.btn-success {
+  background-color: #4caf50 !important;
+  color: white !important;
+}
+
+.btn-warning {
+  background-color: #ff9800 !important;
+  color: white !important;
+}
+
+.btn-error {
+  background-color: #f44336 !important;
+  color: white !important;
+}
